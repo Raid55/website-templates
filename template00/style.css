@@ -1,0 +1,131 @@
+/************************************
+General
+************************************/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/**{
+	border: 1px solid tomato;
+}*/
+/************************************
+Header
+************************************/
+header{
+	border-top: 10px solid green;
+	background-image: url('photo/Notify_Background_header.jpg');
+	background-size: cover;
+	height: 400px;
+	display: flex;
+}
+
+.header-title{
+  color: rgb(199, 199, 199);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	flex-basis: 50vw;
+}
+
+.header-title h1, ul, p{
+	width: 60%;
+	/*color: #fff;*/
+}
+
+.header-title ul {
+	display: flex;
+  justify-content: flex-start;
+	list-style: none;
+	padding: 0;
+}
+
+.header-title li{
+	flex-basis: 50px;
+}
+
+/************************************
+Selection Service
+************************************/
+.service{
+  display: flex;
+  justify-content: center;
+}
+
+.service ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.service ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+}
+
+.service p {
+  width: 95%
+}
+
+/************************************
+Notify user
+************************************/
+
+.notify{
+  display: flex;
+  background-color: rgb(181, 181, 181);
+  border-radius: 8px;
+}
+
+.notify div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px
+}
+
+.team{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.team ul li {
+  padding: 2px;
+}
+
+.team p {
+  text-align: center;
+}
+/************************************
+Foot locker
+************************************/
+
+footer{
+  background-color:rgb(93, 93, 93);
+  display: flex;
+  justify-content: center;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
