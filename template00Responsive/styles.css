@@ -1,0 +1,195 @@
+/* Box-sizing fix! */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body{
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+/**************************
+HEADER
+**************************/
+
+header{
+	background-image: url('images/headerBG.jpg');
+	background-size: cover;
+	border-top: 10px solid lawngreen;
+	color: #fff;
+	display: flex;
+	height: 60vh;
+}
+
+.header-title{
+	align-items: flex-end;
+	display: flex;
+	flex-basis: 50vw;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-title h1, ul, p{
+	width: 60%;
+}
+
+.header-title ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.header-title li{
+	background-color: rgba(100,100,100, 0.7);
+	margin-right: 30px;
+	padding: 15px;
+	text-align: center;
+}
+
+.header-title li:hover{
+	background-color: rgba(124,252,0, 0.7);
+	transition: 0.5s;
+}
+
+/**************************
+SERVICE
+**************************/
+
+.service .row{
+	margin: 2em;
+}
+
+.service .row .col-medium-4 {
+	padding: 1.5em;
+}
+
+.service div, .service p {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.service i {
+	background-color: lawngreen;
+	color: white;
+}
+
+/**************************
+NOTIFY
+**************************/
+
+.notify{
+	background-color: gainsboro;
+}
+
+.notify .row {
+	display: flex;
+}
+
+.notification{
+	order: 2;
+}
+
+.video{
+	order: 1;
+}
+
+.notify .col-medium-6 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+
+.notify input, .notify button {
+	border: none;
+	height: 3em;
+}
+
+.notify input {
+	border-radius: 10px 10px 0 0;
+	padding: 15px;
+	width: 100%;
+}
+
+.notify button {
+	background-color: lawngreen;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	cursor: pointer;
+	width: 100%;
+}
+
+/**************************
+TEAM
+**************************/
+
+.team .row{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.team .row p{
+	text-align: center;
+}
+
+.team .row ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+
+.social li:hover{
+	color: lawngreen;
+	transition: 0.5s;
+}
+
+/**************************
+FOOTER
+**************************/
+
+footer {
+	background-color: gainsboro;
+	display: flex;
+	justify-content: center;
+	padding: 0.5em;
+ }
+
+footer ul{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li {
+	padding: 0.5em;
+}
+
+/**************************
+MEDIA QUERIES
+**************************/
+
+@media screen and (min-width: 641px){
+	.notification{
+		order: 1;
+	}
+
+	.video{
+		order: 2;
+	}
+
+	footer ul{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+
+
+}
